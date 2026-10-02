@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dog Booking App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- Background shapes -->
+        <div class="purple-shape"></div>
+        <div class="light-shape"></div>
+
+        <!-- Phone mockup -->
+        <section class="phone">
+
+            <div class="phone-notch"></div>
+
+            <!-- Chat header -->
+            <header class="chat-header">
+                <span class="back">‹</span>
+
+                <img
+                    src="./avatar.jpg"
+                    alt="Samuel Green"
+                    class="avatar"
+                >
+
+                <div class="user-info">
+                    <h3>Samuel Green</h3>
+                    <p>Available to walk</p>
+                </div>
+
+                <span class="menu">⋮</span>
+            </header>
+
+            <!-- Chat messages -->
+            <div class="chat-body">
+
+                <div class="message received">
+                    That sounds great. I'd be happy with that.
+                </div>
+
+                <div class="message received">
+                    Could you send over some pictures of your dog, please?
+                </div>
+
+                <div class="dog-images">
+                    <img src="./dog-image-1.jpg" alt="Dog picture one">
+
+                    <img src="./dog-image-2.jpg" alt="Dog picture two">
+
+                    <img src="./dog-image-3.jpg" alt="Dog picture three">
+                </div>
+
+                <div class="message sent">
+                    Here are a few pictures. She's a happy girl!
+                </div>
+
+                <div class="message sent short">
+                    Can you make it?
+                </div>
+
+                <div class="message received">
+                    She looks so happy! The time we discussed works.
+                    How long shall I take her out for?
+                </div>
+
+                <!-- Booking options -->
+                <div class="booking-option">
+                    <div class="radio"></div>
+                    <span>30 minute walk</span>
+                    <strong>$29</strong>
+                </div>
+
+                <div class="booking-option">
+                    <div class="radio"></div>
+                    <span>1 hour walk</span>
+                    <strong>$49</strong>
+                </div>
+
+                <!-- Message input -->
+                <form class="message-input">
+                    <input
+                        type="text"
+                        placeholder="Type a message..."
+                    >
+
+                    <button type="button" aria-label="Send message">
+                        ›
+                    </button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Text section -->
+        <section class="content">
+            <h1>Simple booking</h1>
+
+            <p>
+                Stay in touch with our dog walkers through the chat
+                interface. This makes it easy to discuss arrangements
+                and make bookings. Once the walk has been completed
+                you can rate your walker and book again all through
+                the chat.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

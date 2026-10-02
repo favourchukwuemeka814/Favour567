@@ -1,0 +1,307 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    color: #292044;
+}
+
+/* Main layout */
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    padding: 60px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Purple background shape */
+.purple-shape {
+    position: absolute;
+    top: -250px;
+    left: -100px;
+    width: 550px;
+    height: 1000px;
+    background: linear-gradient(
+        180deg,
+        #c13af4,
+        #8833ef
+    );
+    border-radius: 0 0 50% 50%;
+    z-index: 0;
+}
+
+/* Light background shape */
+.light-shape {
+    position: absolute;
+    right: -150px;
+    bottom: -200px;
+    width: 500px;
+    height: 900px;
+    background: #f7f4fc;
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+}
+
+/* Phone */
+.phone {
+    width: 270px;
+    min-width: 270px;
+    background: #ffffff;
+    padding: 9px;
+    border: 3px solid #e9e8ed;
+    border-radius: 32px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+}
+
+/* Phone notch */
+.phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 135px;
+    height: 22px;
+    background: #ffffff;
+    border-radius: 0 0 15px 15px;
+    z-index: 2;
+}
+
+/* Chat header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 28px 12px 15px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #8735ef,
+        #c12be8
+    );
+    border-radius: 8px 8px 5px 5px;
+}
+
+.back {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h3 {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.user-info p {
+    font-size: 8px;
+    margin-top: 3px;
+    opacity: 0.7;
+}
+
+.menu {
+    font-size: 17px;
+}
+
+/* Chat body */
+.chat-body {
+    background: #f5f3f8;
+    padding: 13px 9px 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.message {
+    max-width: 75%;
+    padding: 9px;
+    margin-bottom: 10px;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 9px;
+}
+
+.received {
+    color: #9241c8;
+    background: #e9e2f1;
+    border-bottom-left-radius: 4px;
+}
+
+.sent {
+    margin-left: auto;
+    color: #77717e;
+    background: #ffffff;
+    border-bottom-right-radius: 4px;
+}
+
+.short {
+    width: fit-content;
+    margin-top: 12px;
+}
+
+/* Dog pictures */
+.dog-images {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+    margin: 15px 0 10px;
+}
+
+.dog-images img {
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+/* Booking options */
+.booking-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    padding: 11px 10px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #c02be9,
+        #8835f0
+    );
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(100, 40, 160, 0.12);
+}
+
+.booking-option span {
+    font-size: 9px;
+    flex: 1;
+}
+
+.booking-option strong {
+    font-size: 13px;
+}
+
+.radio {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #e5b6ff;
+    border-radius: 50%;
+}
+
+/* Message input */
+.message-input {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.message-input input {
+    min-width: 0;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 9px 7px;
+    font-size: 9px;
+}
+
+.message-input button {
+    width: 27px;
+    height: 27px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background: #382153;
+    font-size: 23px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Right-side text */
+.content {
+    max-width: 470px;
+    position: relative;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.content p {
+    color: #9999a3;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        gap: 65px;
+        padding: 80px 25px;
+    }
+
+    .purple-shape {
+        top: -280px;
+        left: -230px;
+        width: 500px;
+        height: 650px;
+    }
+
+    .light-shape {
+        display: none;
+    }
+
+    .content {
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 400px) {
+    .phone {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .container {
+        padding: 60px 15px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+}
